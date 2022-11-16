@@ -49,7 +49,7 @@ ces personnes pourront recevoir des “récompenses” comme un remerciement pou
 réactions (mug, t-shirts…). Cependant, le projet mis en place début 2015 n’a pas 
 réellement été adopté par le grand public et le projet a été rapidement laissé de 
 côté. 
-    Le concept de bracelet comportant une puce électronique permettant de prévenir 
+Le concept de bracelet comportant une puce électronique permettant de prévenir 
 est déjà utilisé par de nombreuses entreprises. C’est pourquoi l’innovation que nous 
 avons décidé d’apporter à ce projet se concentre sur la géolocalisation en intérieur. 
 Contrairement aux autres bracelets qui envoient des messages qui ne seront probablement 
