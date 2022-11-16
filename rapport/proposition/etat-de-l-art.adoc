@@ -3,7 +3,38 @@ ifdef::env-gitlab,env-browser[:outfilesuffix: .adoc]
 
 *_Note : 1 page max._*
 
-Dans toutes les écoles d’ingénieur du plateau, les étudiants
+Dans toutes les écoles d’ingénieur du plateau, les étudiants et les référents 
+respect-égalité s’investissent dans la lutte contre les VSS, tout comme des 
+entreprises dont certaines ont déjà développé des projets concrets, similaires 
+au nôtre. 
+
+Le projet de Myeli donné par [1], une start-up bordelaise est un bijou connecté 
+pour contrer les VSS ou harcèlement de rue. Ce bijou accessible et discret est 
+composé d’un bracelet en laiton ou en cordon, d’une pile et d’une puce connectée 
+permettant d’envoyer un SMS personnalisable à nos contacts ainsi que notre 
+position et suivi GPS. Ces actions sont possibles grâce à un système de clics sur 
+le dôme contenant la puce connectée. Un seul clic prévient nos proches que nous 
+sommes en situation d’insécurité et deux clics indiquent à nos proches que nous 
+sommes hors de danger par un SMS. Le bracelet peut également lancer une alarme 
+sonore de 15s pour faire fuir l’agresseur mais aussi peut enregistrer la situation 
+d’insécurité. Par une connexion bluetooth jusqu’à 30m de notre téléphone portable, 
+le bijou est connecté à l’application MyEli ou l’utilisateur peut créer un compte 
+et y rentrer des données personnelles telles que 5 contacts à prévenir en cas de 
+souci. 
+Plusieurs témoignages de jeunes femmes d’âges très variés (27 ans, 42 ans, 72 ans) 
+révèlent l’utilité de ce dispositif pour réduire les risques d’agression ou les 
+situations d’insécurité, peu importe le contexte d’utilisation. Le design 
+esthétique du bracelet est aussi un atout majeur et invite de plus en plus de 
+femmes à le porter encore aujourd’hui. A l’international, nous pouvons également 
+trouver des projets similaires tels que le projet de la société américaine Cuff 
+où cette fois-ci la puce s’insère dans le bracelet de notre choix présenté par 
+la marque [2]. 
+
+Gaspard [3] est un petit objet en silicone conçu par Nicolas Desachy, relié en 
+bluetooth avec un smartphone. Lorsque l’on appuie deux fois sur l’objet, une 
+alerte est envoyée à nos proches ainsi qu’à tous les utilisateurs de l’appareil. 
+
+
 
 
 ==== XXX
