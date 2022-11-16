@@ -3,10 +3,8 @@ ifdef::env-gitlab,env-browser[:outfilesuffix: .adoc]
 
 *_Note : 1 page max._*
 
-Décrivez, en les citant via la bibliographie, les approches/produits
-ressemblant à votre projet et les différences éventuelles. Illustrez
-avec des images si besoin. Utilisez des renvois vers votre
-bibliographie : « comme démontré dans [2], … »
+Dans toutes les écoles d’ingénieur du plateau, les étudiants
+
 
 ==== XXX
 
