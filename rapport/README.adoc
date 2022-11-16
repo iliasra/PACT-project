@@ -37,20 +37,33 @@ ifdef::env-gitlab,env-browser[:outfilesuffix: .adoc]
 
 *_Note: 15 lignes max_*
 
-Décrire votre projet sans le scénariser : De quoi s’agit-il ? En quoi
-cette idée est compatible avec le thème de PACT ? Qu’est-ce qu’il
-permettrait de faire de façon générale.
+Peu de solutions sont actuellement mises en place pour lutter contre les VSS 
+(Violences Sexistes et Sexuelles) en école d’ingénieurs. A Télécom Paris, les membres du pôle REC 
+(Respect, Ecoute et Consentement) sont reconnaissables grâce à un brassard pendant les soirées, 
+mais ne peuvent assurer une couverture optimale étant donné le nombre de personnes. 
+Le projet Balance ton Bip !  vise à équiper chaque étudiant.e d’un bracelet, 
+muni d’un bipeur permettant, en cas de VSS, d’alerter discrètement le pôle REC, qui pourra venir 
+désamorcer la situation. En pratique, les membres du pôle REC recevront via une application 
+mobile une localisation instantanée approchée, ainsi que les informations personnelles permettant
+d’identifier la personne en danger. Les étudiant.e.s n’auront donc qu’à installer l’application et 
+y créer un profil, ainsi qu’à porter le bracelet pendant les soirées organisées au sein de l’école.
 
 == English Summary (PAN1)
 
 *_Note : 15 lignes max, version anglaise du texte précédent_*
 
-Ligula dapibus egestas. Donec sed velit ac lectus mattis sagittis.
 
-In hac habitasse platea dictumst. Maecenas in ligula. Duis tincidunt
-odio sollicitudin quam. Nullam non mauris. Phasellus lacinia, velit sit
-amet bibendum euismod, leo diam interdum ligula, eu scelerisque sem
-purus in tellus.
+
+Few solutions currently exist to prevent SSV (Sexual and Sexist Violences) in engineering schools. 
+During the parties at Télécom Paris, the members of the Respect and Consent club can be 
+recognized thanks to their pink armbands. Unfortunately there are too many people at these 
+parties for their presence to be entirely effective. The BeepToo project aims at providing a 
+bracelet to every student for them to wear during these parties. It will contain a beeper which 
+can be activated in case of danger and will warn the Respect and Consent Club that the user needs 
+help. In real life, the members of the RC club will receive the location at which the endangered 
+user pressed the button along with the basic information needed to identify them through an app. 
+Thus the students will only need to download the app, create a profile and wear the bracelet during 
+the parties at the school.
 
 <<<
 
