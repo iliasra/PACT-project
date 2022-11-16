@@ -56,7 +56,7 @@ Contrairement aux autres bracelets qui envoient des messages qui ne seront proba
 pas lus par le pôle REC pendant la soirée, notre bracelet enverra un signal à des balises 
 codées avec des Rasperry Pi qui enverront la localisation directement au téléphone d’un 
 membre du pôle REC via l’application. L’alerte avec géolocalisation permet d’arrêter plus 
-rapidement l’agression qu’un simple message. 
+rapidement l’agression qu’un simple message 
 
 
 
