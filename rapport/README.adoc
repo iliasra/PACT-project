@@ -16,7 +16,7 @@ ifdef::env-gitlab,env-browser[:outfilesuffix: .adoc]
 
 === Membres du groupe
 
-* BITTOLO Raphaël
+* Nom1
 * Nom2
 * Nom3
 * Nom4
