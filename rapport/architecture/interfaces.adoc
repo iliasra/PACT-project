@@ -14,10 +14,18 @@ précision.
 Si c’est une interface entre deux blocs électroniques, c’est une description
 des signaux électroniques ou protocoles utilisés.
 
-==== InterfaceBloc1-2
+==== Interface Application mobile / Serveur
 
-Description textuelle d’interface
+Interface Java qui permet l'envoi/la réception de requête entre l'application mobile et le serveur.
 
-==== InterfaceBloc2-4
+==== Interface Base De Données / Serveur
 
-Description textuelle d’interface
+Interface Java qui permet l'envoi/la réception de requête entre la BDD et le serveur.
+
+==== Interface Bracelet / Balises (RaspBerry Pi)
+
+Ondes (certainement un échange bluetooth) échangées entre le bracelet et les balises. 
+
+==== Interface Bracelet / Application mobile
+
+Échange bluetooth entre l'application et le bracelet.
