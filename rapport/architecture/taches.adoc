@@ -27,7 +27,9 @@ experts.
 | T1.3  | Distribution                                          | Application disponible sur iOS, Android...
 | T1.4  | Développement et code source                          | Application fonctionnelle
 | T2    | Module Systèmes Embarqués                             | Conception du bracelet et du système de géolocalisation 
-| T2.1  | Découpage signal sonore en bande fréquentielle        | la méthode X doit être implémentée
-| T2.2  | Détection du tempo                                    | …
-| T2.3  | Changement de tempo                                   | …
+| T2.1  | Composants électroniques                              | Emetteur courte portée + pile de tailles réduites
+| T2.2  | Conception du bracelet                                | Intégration des composants électroniques au bracelet 
+| T2.3  | Développement des balises                             | Avoir codé les récepteurs, assuré la communication avec bracelets et serveur
+| T2.4  | Calibration                                           | Obtenir des résultats satisfaisants en conditions simplifiées, sans obstacle
+| T3    | 
 |====
