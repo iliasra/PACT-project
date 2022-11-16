@@ -6,7 +6,7 @@ interfaces entre modules.
 Pour le PAN2, il faut une description complète des interfaces.
 
 Il faut ici une description textuelle de chaque interface, c'est-à-dire chaque
-échange entre deux blocs.
+échange entre deux blocs.blabla
 Si c’est une interface entre deux blocs informatiques, c’est une interface
 Java.
 S’il y a des échanges de données complexes, il faut en décrire le format avec
