@@ -31,5 +31,13 @@ experts.
 | T2.2  | Conception du bracelet                                | Intégration des composants électroniques au bracelet 
 | T2.3  | Développement des balises                             | Avoir codé les récepteurs, assuré la communication avec bracelets et serveur
 | T2.4  | Calibration                                           | Obtenir des résultats satisfaisants en conditions simplifiées, sans obstacle
-| T3    | 
+| T3    | Module Client Serveur et BDD                          | Assurer la transmission, le calcul, et le stockage d'information 
+| T3.1  | Gestion des données                                   | Stockage des données utilisateurs effectif
+| T3.2  | Communication client                                  | Recevoir les informations des balises, en déduire une géolocalisation approximative
+| T3.3  | Communication application                             | Identifier l'identifiant d'alerte, le transmettre ainsi que la géoloc à l'appli côté REC
+| T4    | Module Tests et Intégration                           | Assurer le suivi des autres modules
+| T4.1  | Tests application                                     | Application fonctionnelle
+| T4.2  | Tests bracelet                                        | Réactivité de l'émetteur, réception du signal
+| T4.3  | Tests géoloc                                          | Tests de géolocalisation approximative en conditions simples
+| T4.4  | Tests communication serveur                           | Tests de transmission des données, identification, réception côté REC
 |====
