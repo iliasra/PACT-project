@@ -1,7 +1,7 @@
 
 === Schéma d’architecture
 
-image::SchémaArchitecturalFinal.pdf[]
+
 
 ////
 Insérer ici un ou plusieurs schémas d’architecture du projet. Voir le
