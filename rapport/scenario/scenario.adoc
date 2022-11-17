@@ -1,10 +1,11 @@
 === Scénarios d’usage
-
+////
 Mettre ici le scénario d’usage que vous avez construit lors des séances
 encadrées par les experts SES. Vous pouvez mettre un scénario amélioré
 (et non celui noté) si vous jugez votre scénario insuffisant pour faire
 comprendre au jury PACT les différentes étapes d’utilisation de votre
 produit/service ou si vous avez changé d’idées entre-temps.
+////
 
 Alice, 20 ans, est étudiante en première année à Telecom Paris. Elle 
 est invitée à une soirée d’intégration au mois de septembre au retour 
