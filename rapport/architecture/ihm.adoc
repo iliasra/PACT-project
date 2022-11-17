@@ -17,10 +17,10 @@ Description du storyboard
 
 Pour la première connexion (interface étudiant-application): 
 
-L'utilisateur peut créer son compte et y rentrer ses informations personnelles s'ils le souhaite. 
+L'utilisateur peut créer son compte et y rentrer ses informations personnelles s'il le souhaite. 
 Il se connecte ensuite à son bracelet et peut lancer une alerte par un appui sur le bouton de son bracelet.
 
 Pour la première connexion ainsi qu'une connexion quelconque (interface pôle REC-application):
 
-Le pôle REC reçoit une notification d'alerte avec le nom, le prénom, l'école (si l'étudiant a partagé ses données) et la géolocalisation. 
+Le pôle REC reçoit une notification d'alerte avec le nom, le prénom, l'école (si l'étudiant a partagé ses données personnelles) et la géolocalisation. 
 Un membre du pôle REC peut donc agir, et l'étudiant peut annuler son alerte à tout moment sur l'application. 
