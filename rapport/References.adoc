@@ -1,9 +1,9 @@
-
+////
 *_Note : Liste des références exploitées. Une référence complète
 donne titre, auteur(s), date, journal, revue, source de publication,
 titre de conférence, numéro, pages. Une webographie est aussi
 envisageable : titre, auteur, date, page web_*
-
+////
 Bibliographie
 
 ProduitServiceBip, 2016, https://www.servicebip.com/nos-produits/
