@@ -16,26 +16,26 @@ ifdef::env-gitlab,env-browser[:outfilesuffix: .adoc]
 
 === Membres du groupe
 
-* Nom1
-* Nom2
-* Nom3
-* Nom4
-* Nom5
-* Nom6
+* Raphaël Bittolo
+* Charlotte-Alicia Bouée
+* Enzo Gelas
+* Colin Picolet
+* Ilias Ramim
+* Raphaël Tran-Thanh
 
 === Tuteur
 
-* xx yy
+* Jean-Claude Dufourd
 
 === Encadrant génie logiciel
 
-* xx yy
+* Elise Bonnail
 
 <<<
 
 == Résumé du sujet choisi en français (PAN1)
 
-*_Note: 15 lignes max_*
+//*_Note: 15 lignes max_*
 
 Peu de solutions sont actuellement mises en place pour lutter contre les VSS 
 (Violences Sexistes et Sexuelles) en école d’ingénieurs. A Télécom Paris, les membres du pôle REC 
@@ -50,7 +50,7 @@ y créer un profil, ainsi qu’à porter le bracelet pendant les soirées organi
 
 == English Summary (PAN1)
 
-*_Note : 15 lignes max, version anglaise du texte précédent_*
+//*_Note : 15 lignes max, version anglaise du texte précédent_*
 
 
 
@@ -67,22 +67,22 @@ the parties at the school.
 
 <<<
 
-*Notes concenant le rapport*
+// *Notes concenant le rapport*
 
-Les différentes pages du document sont rédigées en utilisant le langage
-AsciiDoc. Le squelette de rapport contient des exemples avec entre autres:
+// Les différentes pages du document sont rédigées en utilisant le langage
+// AsciiDoc. Le squelette de rapport contient des exemples avec entre autres:
 
-* des images,
-* des liens,
-* des équations.
+// * des images,
+// * des liens,
+// * des équations.
 
-La structure du rapport (parties, sections et la relation avec les
-différents fichiers) se trouve dans le fichier courant.
+// La structure du rapport (parties, sections et la relation avec les
+// différents fichiers) se trouve dans le fichier courant.
 
-**Prenez le temps** de supprimer le texte de remplissage et les sections non
-utilisées pour l'instant. Vous pouvez par exemple commenter ces parties non
-utilisées pour qu'elles n'apparaissent pas dans le document final. En Asciidoc,
-il suffit de les précéder de deux slashs (`//`).
+// **Prenez le temps** de supprimer le texte de remplissage et les sections non
+// utilisées pour l'instant. Vous pouvez par exemple commenter ces parties non
+// utilisées pour qu'elles n'apparaissent pas dans le document final. En Asciidoc,
+// il suffit de les précéder de deux slashs (`//`).
 
 <<<
 toc::[]
