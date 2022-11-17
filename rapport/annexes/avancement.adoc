@@ -19,3 +19,14 @@ Article Wikipédia : Ultra Wideband, 2004, https://fr.wikipedia.org/wiki/Ultra_w
 Move’N See : des robots cameraman à GPS ou radar pour sportifs, 24 octobre 2014, https://www.clubic.com/materiel-video/camera-de-poche/actualite-735073-move-n-see-pixio-robot-cameraman-gps-radar.html 
 
 Article Wikipédia : Système de positionnement en intérieur, 2013, https://fr.wikipedia.org/wiki/Syst%C3%A8me_de_positionnement_en_int%C3%A9rieur 
+
+=== Réunion du 08/11/2022
+
+*Présents :
+**Enzo GELAS 
+**Raphaël TRAN-THANH
+
+*Sujets abordés :
+**Géolocalisation approchée : Au moyen de iBeacons, de RaspberryPi etc...
+**Reprise du modèle : réflexion sur les interfaces etc... 
+**Actions à entreprendre : se renseigner sur le Ibeacon, les interfaces...
