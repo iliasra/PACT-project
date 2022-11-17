@@ -1,10 +1,10 @@
-=== Description de la proposition
-*_Note: 2 page max._*
+//=== Description de la proposition
+//*_Note: 2 page max._*
 
-_Décrire de façon détaillée votre projet : motivations de base/problèmes
-constatés avant élaboration du projet, comment votre projet répond à ces
-besoins. Ajouter une image ou une figure pour montrer à quoi cela
-ressemble si besoin.
+//_Décrire de façon détaillée votre projet : motivations de base/problèmes
+//constatés avant élaboration du projet, comment votre projet répond à ces
+//besoins. Ajouter une image ou une figure pour montrer à quoi cela
+//ressemble si besoin.
 
 //introduction, motivation...
 Le projet consiste en la conception d’un objet portable, discret, potentiellement sous la forme d’un bipeur, qui permettrait d’alerter les membres du pôle REC (respect, écoute et consentement) en cas de VSS (violences sexistes et sexuelles), ou de tout autre problème lors des soirées à Télécom. La victime serait alors géolocalisée dans la soirée, ce qui aiderait à l’intervention rapide des membres du pôle REC grâce à une alerte. Le dispositif, pensé pour être utilisé à Télécom, pourrait ensuite être étendu à d’autres écoles. De plus, au regard de la proportion d’étudiantes présentes à Telecom Paris (22%), à Centrale-Supélec (17%), à Polytechnique (18%), l’ambiance dans ces écoles d’ingénieur a tendance à être très masculine. Nous nous sommes donc plus particulièrement penchés sur les agressions dont les victimes seraient des étudiantes mais ce projet concerne évidemment la protection contre les VSS et violences autres sur des personnes de tout genre. L’ensemble du projet regroupait au premier abord différents enjeux techniques à traiter.
