@@ -109,6 +109,8 @@ include::scenario/scenario.adoc[Scénarios d’usage]
 
 image::../architecture/SchemaArchipng.png[Schéma d’architecture]
 
+include::../architecture/schema.adoc[Description des blocs]
+
 include::architecture/interfaces.adoc[Description des interfaces]
 
 include::architecture/ihm.adoc[Interface utilisateur graphique]
