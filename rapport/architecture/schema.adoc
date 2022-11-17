@@ -55,8 +55,8 @@ projet tout fait en encapsulant un programme déjà existant.
 ===== Bracelet utilisateur
 
 Le bracelet permet à une potentielle victime d'alerter le pôle REC en 
-cas de problème, en appuyant sur un bouton contenue dans le bracelet.
-Le système contenue dans le bracelet envoie des signaux Bluetooth aux balises
+cas de problème, en appuyant sur un bouton contenu dans le bracelet.
+Le système contenu dans le bracelet envoie des signaux Bluetooth aux balises
 Raspberry Pi, qui permettront de géolocaliser grossièrement le bracelet de la victime.
 
 ===== Balises Raspberry Pi
@@ -83,8 +83,8 @@ L'application a deux versions interfaces différentes: une pour les membres du p
 utilisateurs. Elle sera codée en React Native grâce au module correspondant.
 Du côté utilisateur, l'interface permet de se créer/connecter à un compte, d'entrer ses informations
 (photo, informations complémentaires), et éventuellement d'annuler une alerte déclenchée par erreur.
-Du côté REc, l'interface permet de répondre à une alerte, de visualiser la position de la victime dans 
-zone couverte par la géolocalisation, ainsi que d'afficher la photo de la personne appelant de l'aide.
+Du côté REC, l'interface permet de répondre à une alerte, de visualiser la position de la victime dans 
+zone couverte par la géolocalisation, ainsi que d'afficher la photo de la personne appelant à l'aide.
 ////
 *Exemple utilisant http://blockdiag.com/en/actdiag/index.html[actdiag]*
 **(Vous pouvez, bien sûr, utiliser votre outil de dessin préféré).**
