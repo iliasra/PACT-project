@@ -115,6 +115,8 @@ include::../architecture/storyBoardpng.png[Diagramme de séquence]
 
 include::architecture/ihm.adoc[Interface utilisateur graphique]
 
+image::../architecture/StoryBoard.jpg[StoryBoard]
+
 <<<
  
 == Organisation du projet (PAN1)
