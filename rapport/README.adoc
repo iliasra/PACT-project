@@ -1,5 +1,5 @@
-= Rapport d’avancement: groupe “x.y”
-PACT groupe xy (Les plus beaux)
+= Rapport d’avancement: groupe “8.2”
+PACT groupe 8.2
 ifdef::env-gitlab,env-browser[:outfilesuffix: .adoc]
 :doctype: book
 :stem: latexmath
@@ -109,7 +109,7 @@ include::scenario/scenario.adoc[Scénarios d’usage]
 
 image::../architecture/SchemaArchipng.png[Schéma d’architecture]
 
-include::/architecture/schema.adoc[Description des blocs]
+include::../organisation/planification.adoc[planification]
 
 include::architecture/interfaces.adoc[Description des interfaces]
 
