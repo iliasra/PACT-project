@@ -1,8 +1,8 @@
 === Description des interfaces (PAN1 / PAN2)
-
+////
 Pour le PAN1, il faut identifier et décrire sommairement toutes les
 interfaces entre modules.
-////
+
 Pour le PAN2, il faut une description complète des interfaces.
 
 Il faut ici une description textuelle de chaque interface, c'est-à-dire chaque
