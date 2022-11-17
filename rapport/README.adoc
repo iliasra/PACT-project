@@ -107,7 +107,7 @@ include::scenario/scenario.adoc[Scénarios d’usage]
 
 == Architecture du projet (PAN1)
 
-image::architecture/SchemaArchipng.png[Schéma d’architecture]
+image::SchemaArchipng.png[Schéma d’architecture]
 
 include::architecture/interfaces.adoc[Description des interfaces]
 
