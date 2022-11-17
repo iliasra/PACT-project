@@ -2,7 +2,7 @@
 
 Pour le PAN1, il faut identifier et décrire sommairement toutes les
 interfaces entre modules.
-
+////
 Pour le PAN2, il faut une description complète des interfaces.
 
 Il faut ici une description textuelle de chaque interface, c'est-à-dire chaque
@@ -13,6 +13,7 @@ S’il y a des échanges de données complexes, il faut en décrire le format av
 précision.
 Si c’est une interface entre deux blocs électroniques, c’est une description
 des signaux électroniques ou protocoles utilisés.
+////
 
 ==== Interface Application mobile / Serveur
 
