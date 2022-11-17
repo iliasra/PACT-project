@@ -107,7 +107,7 @@ include::scenario/scenario.adoc[Scénarios d’usage]
 
 == Architecture du projet (PAN1)
 
-include::architecture/Schema Architectural Final.pdf[Schéma d’architecture]
+include::architecture/SchemaArchitecturalFinal.pdf[Schéma d’architecture]
 
 include::architecture/interfaces.adoc[Description des interfaces]
 
@@ -116,13 +116,13 @@ include::architecture/sequence.adoc[Diagramme de séquence]
 include::architecture/ihm.adoc[Interface utilisateur graphique]
 
 <<<
-
+//// 
 == Organisation du projet (PAN1)
 
 include::organisation/planification.adoc[Diagramme de planification temporel des tâches]
 
 include::organisation/plan-tests.adoc[Plans de test (PAN2+)]
-
+//// 
 <<<
 
 [bibliography]
@@ -131,7 +131,7 @@ include::organisation/plan-tests.adoc[Plans de test (PAN2+)]
 include::References.adoc[Bibliographie]
 
 <<<
-
+////
 == Annexes
 
 include::annexes/modifications.adoc[Modifications (PAN2+)]
@@ -141,3 +141,4 @@ include::annexes/avancement.adoc[Avancement des modules]
 include::annexes/moduleX.adoc[Avancement module X]
 
 include::annexes/moduleY.adoc[Avancement module Y]
+////
