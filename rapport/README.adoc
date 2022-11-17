@@ -140,6 +140,5 @@ include::annexes/avancement.adoc[Avancement des modules]
 
 ////
 include::annexes/moduleX.adoc[Avancement module X]
-
-include::annexes/moduleY.adoc[Avancement module Y]
 ////
+include::annexes/moduleY.adoc[Avancement module Y]
