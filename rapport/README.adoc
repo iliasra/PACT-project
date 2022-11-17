@@ -109,7 +109,7 @@ include::scenario/scenario.adoc[Scénarios d’usage]
 
 image::../architecture/SchemaArchipng.png[Schéma d’architecture]
 
-include::../organisation/planification.adoc[planification]
+include::organisation/planification.adoc[planification]
 
 include::architecture/interfaces.adoc[Description des interfaces]
 
@@ -122,6 +122,8 @@ image::../architecture/StoryBoard.jpg[StoryBoard]
 == Organisation du projet (PAN1)
 
 include::organisation/planification.adoc[Diagramme de planification temporel des tâches]
+
+include::architecture/taches.adoc[taches à effectuer]
 
 include::organisation/plan-tests.adoc[Plans de test (PAN2+)]
  
