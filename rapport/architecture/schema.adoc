@@ -60,21 +60,24 @@ Raspberry Pi, qui permettront de géolocaliser grossièrement le bracelet de la 
 
 Le rôle des balises est de recevoir les signaux provenant des bracelets. En fonction de l'intensité
 du signal perçu, la balise envoie un signal au serveur.
+Nous utiliserons dans le bracelet un émetteur bluetooth préexistant, dont nous essayerons de programmer l'émission de signal pour que cela corresponde à nos attentes. 
 
 ===== Serveur
 
 Le serveur reçoit les signaux des différentes balises, et calcule alors la position du bracelet.
 Le serveur s'occupe aussi de recevoir des requêtes de connexion/création de compte provenant des téléphones 
 utilisateurs. Il peut alors communiquer avec la BDD pour mettre à jour les données utilisateurs. 
+Le serveur sera créé grâce au module correspondant.
 
 ===== Base De Données
 
-La base de données stocke les différentes données utilisateurs: noms, prénoms, photos.
+La base de données stocke les différentes données utilisateurs: noms, prénoms, photos. 
+La base de données sera créée grâce au module correspondant.
 
 ===== Application
 
 L'application a deux versions interfaces différentes: une pour les membres du pôle REC, une pour les 
-utilisateurs. Elle sera codée en React Native.
+utilisateurs. Elle sera codée en React Native grâce au module correspondant.
 Du côté utilisateur, l'interface permet de se créer/connecter à un compte, d'entrer ses informations
 (photo, informations complémentaires), et éventuellement d'annuler une alerte déclenchée par erreur.
 Du côté REc, l'interface permet de répondre à une alerte, de visualiser la position de la victime dans 
