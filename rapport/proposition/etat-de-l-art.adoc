@@ -1,8 +1,8 @@
 === Description de l’état de l’art
 ifdef::env-gitlab,env-browser[:outfilesuffix: .adoc]
-
+////
 *_Note : 1 page max._*
-
+////
 Dans toutes les écoles d’ingénieur du plateau, les étudiants et les référents 
 respect-égalité s’investissent dans la lutte contre les VSS, tout comme des 
 entreprises dont certaines ont déjà développé des projets concrets, similaires 

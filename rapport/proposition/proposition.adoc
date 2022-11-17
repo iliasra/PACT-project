@@ -1,4 +1,4 @@
-//=== Description de la proposition
+=== Description de la proposition
 //*_Note: 2 page max._*
 
 //_Décrire de façon détaillée votre projet : motivations de base/problèmes
