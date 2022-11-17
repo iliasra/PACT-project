@@ -1,3 +1,4 @@
+////
 === Schéma d’architecture
 
 Insérer ici un ou plusieurs schémas d’architecture du projet. Voir le
@@ -34,13 +35,14 @@ digraph MonGraph {
     Hub -> BlocOut2 [label="commande"];
 }
 ....
-
+////
 
 ==== Description des blocs
-
+////
 Il faut ici une description textuelle de chaque bloc, sa fonction
 détaillée. En général, un bloc correspond à un module, sauf exception.
 Il peut être adapté de faire des blocs plus petits qu’un module.
+////
 
 Il est important ici de distinguer les bibliothèques identifiées et
 disponibles de ce que vous allez produire (coder) vous-même. Vous ne
@@ -72,12 +74,12 @@ La base de données stocke les différentes données utilisateurs: noms, prénom
 ===== Application
 
 L'application a deux versions interfaces différentes: une pour les membres du pôle REC, une pour les 
-utilisateurs.
+utilisateurs. Elle sera codée en React Native.
 Du côté utilisateur, l'interface permet de se créer/connecter à un compte, d'entrer ses informations
 (photo, informations complémentaires), et éventuellement d'annuler une alerte déclenchée par erreur.
 Du côté REc, l'interface permet de répondre à une alerte, de visualiser la position de la victime dans 
 zone couverte par la géolocalisation, ainsi que d'afficher la photo de la personne appelant de l'aide.
-
+////
 *Exemple utilisant http://blockdiag.com/en/actdiag/index.html[actdiag]*
 **(Vous pouvez, bien sûr, utiliser votre outil de dessin préféré).**
 
@@ -99,3 +101,4 @@ actdiag {
 ....
 
 Voir la liste des outils supportés par http://asciidoctor.org/docs/asciidoctor-diagram/[asciidoctor-diagram].
+////
