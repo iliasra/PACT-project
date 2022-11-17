@@ -22,11 +22,16 @@ Article Wikipédia : Système de positionnement en intérieur, 2013, https://fr.
 
 === Réunion du 08/11/2022
 
-*Présents :
-**Enzo GELAS 
-**Raphaël TRAN-THANH
+Présents :
 
-*Sujets abordés :
-**Géolocalisation approchée : Au moyen de iBeacons, de RaspberryPi etc...
-**Reprise du modèle : réflexion sur les interfaces etc... 
-**Actions à entreprendre : se renseigner sur le Ibeacon, les interfaces...
+Enzo GELAS 
+
+Raphaël TRAN-THANH
+
+Sujets abordés :
+
+Géolocalisation approchée : Au moyen de iBeacons, de RaspberryPi etc...
+
+Reprise du modèle : réflexion sur les interfaces etc... 
+
+Actions à entreprendre : se renseigner sur le Ibeacon, les interfaces...
