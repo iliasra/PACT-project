@@ -6,6 +6,83 @@ encadrées par les experts SES. Vous pouvez mettre un scénario amélioré
 comprendre au jury PACT les différentes étapes d’utilisation de votre
 produit/service ou si vous avez changé d’idées entre-temps.
 
+Alice, 20 ans, est étudiante en première année à Telecom Paris. Elle 
+est invitée à une soirée d’intégration au mois de septembre au retour 
+du week-end d’intégration (WEI). Alice est très enthousiaste à l’idée 
+d’y aller avec sa binôme du WEI Carla. Malgré cela, elle est un peu 
+stressée car elle craint de croiser à la soirée Benoît, un autre 
+étudiant de première année l’ayant draguée avec insistance lors du WEI. 
+Dans l’après-midi, elle décide de s’inscrire sur l’application “Balance 
+ton bip !”. Elle crée alors son compte en ajoutant son identité, le nom 
+de son école, un mot de passe et consent à transmettre une photo d’identité 
+au pôle REC via l’application. 
+
+Après s’être préparées avec Carla, elles arrivent vers 22h à la soirée. 
+L’atmosphère est festive, l’ambiance s’installe. Alice profite donc 
+tranquillement de la soirée et le temps passe jusqu’à ce qu’elle aperçoive 
+Benoît au fond de la salle, vers 02h du matin, ayant bu quelques verres de 
+trop, lui faisant un signe de la main et se dirigeant vers elle. 
+
+Ce qu’elle craignait arriva. Alors qu’elle discute avec Carla, Benoît 
+s’invite dans leur conversation. Benoît apparaît comme très sympathique, 
+prend de la place, et monopolise l’attention tout en la tournant vers 
+Alice, avec des tapes sur les épaules, des caresses sur le dos pour rire. 
+Progressivement, il devient très insistant, multiplie et prolonge les 
+contacts, il pose sa main sur la taille d’Alice et l’isole du reste de son 
+groupe d’amis. Carla entend une de ses musiques préférée et laisse Alice 
+seule avec Benoît pour aller danser avec des amis.
+
+A ce moment-là, Alice se sent mal à l’aise et appuie sur son bracelet une 
+fois. Une alerte est envoyée sur l’application “Balance ton Bip !” sur les 
+comptes des membres du pôle REC. La photo d’Alice et son identité apparaissent 
+sur l’écran, ainsi que sa localisation instantanée. Un des membres indique 
+qu’il a vu l’alerte et se dirige donc vers Alice pour désamorcer la situation 
+subtilement, en lui proposant un verre d’eau ou un tour dehors. 
+
+Plus tard dans la soirée, la situation se reproduit et Alice appuie de 
+nouveau sur le bouton d’alerte. Cependant, cette fois-ci, Carla rejoint 
+Alice et se rend compte de son malaise. Elle reste avec elle et l’éloigne 
+de Benoît immédiatement, avant l’intervention du pôle REC. Alice décide donc 
+d’annuler son alerte sur l’application pour ne pas surcharger le pôle REC 
+d’alertes. 
+
+En effet, elle a eu raison car le pôle REC reçoit en même temps une autre 
+alerte. David, 21 ans, étudiant en deuxième année à Telecom Paris, subit 
+la pression et les remarques lourdes de deux autres étudiants de sa promotion 
+à propos de son homosexualité. Ces remarques violentes l’oppressent car David 
+se sent rapidement mis à l’écart et pris à parti par les deux étudiants en 
+face de lui. David appuie donc sur le bracelet pour qu’un membre du pôle REC 
+intervienne. 
+Finalement, la soirée se termine et les différentes violences ont pu être 
+gérées avec succès grâce au pôle REC équipé de l’application “balance ton bip !”.
+
+Comme nous l’avons vu avec l’exemple d’Alice et de David, lors d’une soirée, 
+l’ambiance de fête et le facteur alcool sont deux points qui participent 
+activement à l’émergence de VSS (violences sexistes et sexuelles) ou d’autres 
+violences (homophobie par ex). Un.e étudiant.e ayant un peu trop bu peut 
+devenir insistant.e et adopter un comportement inapproprié envers un.e 
+étudiant.e. Ce comportement peut-être de différentes natures:
+
+Avances répétées malgré un refus ;
+
+Remarques/insultes (sexistes, homophobes…) ;
+
+Agression sexuelle (attouchements…) ;
+
+L’étudiant.e, en situation d’inconfort, voire de danger, peut alors discrètement 
+appuyer sur son bipeur (intégré dans un bracelet porté). Les membres du pôles REC 
+reçoivent une notification sur leur téléphone, et l’interface de l’application 
+affiche désormais la photo de l’étudiant.e concerné.e ainsi que sa localisation 
+dans la pièce. Ils peuvent alors retrouver la victime et intervenir le plus 
+rapidement possible. La durée d’une VSS par exemple étant très variable, la 
+solution retenue doit être la plus efficace possible pour stopper les VSS les 
+plus brèves. Pour cela, une problématique s’est posée : l’éventuelle utilisation 
+d’une LED sur le dispositif pour repérer plus rapidement la victime. Cependant, 
+dans le scénario d’une VSS, il faut aussi prendre en compte la réaction de 
+l’agresseur. Cette dernière problématique est donc indispensable à traiter. 
+
+
+
 ==== XX
 
 Nulla. Curabitur aliquet leo ac massa. Praesent posuere lectus vitae
