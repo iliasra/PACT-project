@@ -1,0 +1,93 @@
+____
+Bracelet utilisateur +
+Module Systèmes Embarqués
+____
+
+Appui bouton
+
+d’urgence
+
+____
+Balises (Raspberry Pi) Module Géolocalisation/Raspberry Pi
+____
+
+PC
+
+Application
+
+Module React Native/ Tests et Intégration
+
+____
+Module Communication Client-Serveur / Base de données
+
+Serveur BDD
+____
+
+[cols=",,,,",options="header",]
+|===
+a|
+____
+Légende :
+____
+
+|côté victime |Calcul de |Stockage |
+|image:vertopal_f3dd836d1f0f443789b37800910f2911/media/image1.png[image,width=52,height=14]
+a|
+____
+: flux d’information lié à la
+____
+
+a|
+____
+Connexion/création de
+____
+
+|position |
+
+| | |compte | |données
+
+a|
+____
+géolocalisation
+____
+
+| |Identification | |
+
+|image:vertopal_f3dd836d1f0f443789b37800910f2911/media/image2.png[image,width=49,height=13]
+a|
+____
+: flux d’information lié au
+____
+
+| | |utilisateurs
+
+| | | |de l’utilisateur |
+
+a|
+____
+compte de l’utilisateur
+____
+
+| | | |
+|===
+
+côté
+RECimage:vertopal_f3dd836d1f0f443789b37800910f2911/media/image3.png[image,width=934,height=658]
+
+Affichage de la localisation de
+
+la victime
+
+Affichage informations
+
+utilisateur
+
+Connexion/création de
+
+compte
+
+____
+Mise à jour de
+____
+
+la BDD
