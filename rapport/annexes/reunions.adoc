@@ -1,5 +1,5 @@
 === Comptes Rendus de réunions
-
+////
 Insérez ici vos comptes rendus de réunions : date, durée, participants,
 sujets abordés.
 
@@ -18,7 +18,7 @@ viverra non, pharetra id, dui. Lorem ipsum dolor sit amet, consectetuer
 adipiscing elit.
 ** Interdum arcu, at pellentesque diam metus ut nulla. Vestibulum eu
 dolor sit amet lacus varius fermentum. Morbi dolor enim, pulvinar eget.
-
+////
 === Réunion du 08/11/2022
 
 *Présents :
@@ -27,4 +27,5 @@ dolor sit amet lacus varius fermentum. Morbi dolor enim, pulvinar eget.
 
 *Sujets abordés :
 **Géolocalisation approchée : Au moyen de iBeacons, de RaspberryPi etc...
-**Reprise du modèle : réflexion sur les interfaces etc... Raphaël a le schéma récap
+**Reprise du modèle : réflexion sur les interfaces etc... 
+**Actions à entreprendre : se renseigner sur le Ibeacon, les interfaces...
