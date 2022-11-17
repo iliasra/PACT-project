@@ -111,8 +111,6 @@ image::../architecture/SchemaArchipng.png[Schéma d’architecture]
 
 include::architecture/interfaces.adoc[Description des interfaces]
 
-include::../architecture/storyBoardpng.png[Diagramme de séquence]
-
 include::architecture/ihm.adoc[Interface utilisateur graphique]
 
 image::../architecture/StoryBoard.jpg[StoryBoard]
@@ -143,4 +141,6 @@ include::annexes/avancement.adoc[Avancement des modules]
 ////
 include::annexes/moduleX.adoc[Avancement module X]
 ////
+////
 include::annexes/moduleY.adoc[Avancement module Y]
+////
