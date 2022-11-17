@@ -63,8 +63,8 @@ rapidement l’agression qu’un simple message.
 
 
 
-
-////===XXX
+////
+===XXX
 
 Et magnis dis parturient montes, nascetur ridiculus mus.
 
@@ -94,4 +94,5 @@ On peut citer comme exemple l'article de Claude E. Shannon sur la
 théorie de la communication <<RefShannon>>
 ou, bien évidement, la vitrine des projets PACT <<VitrinePACT>>.
 
-Voir <<TOTO,la référence>> très intéressante elle aussi.////
+Voir <<TOTO,la référence>> très intéressante elle aussi.
+////
