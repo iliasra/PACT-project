@@ -116,13 +116,13 @@ include::architecture/sequence.adoc[Diagramme de séquence]
 include::architecture/ihm.adoc[Interface utilisateur graphique]
 
 <<<
-//// 
+ 
 == Organisation du projet (PAN1)
 
 include::organisation/planification.adoc[Diagramme de planification temporel des tâches]
 
 include::organisation/plan-tests.adoc[Plans de test (PAN2+)]
-//// 
+ 
 <<<
 
 [bibliography]
