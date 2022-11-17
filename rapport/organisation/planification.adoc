@@ -8,22 +8,23 @@ Les dates importantes de PACT sont:
 * PAN3: 04/04/2023
 * PAN4: 30/05/2023
 
+////
 Les deux tableaux ci-dessous doivent vous aider à évaluer votre avancement/retard dans le développement de votre projet.
 Vous pouvez aussi vous aider de ces tableaux pour:
 
 * identifier les périodes de fortes charge de travail
 * analyser les dépendances entre modules
 * les retards bloquant pour l'avancée de l'ensemble du projet (ce n'est pas forcément le cas pour tous les modules)
-
+////
 ==== Planning Groupe
-
+////
 Pour PAN1, remplissez dans ce tableau les dates prévues. Vous mettrez à jour les dates finales en cours d'année.
-
+////
 [cols=",^,,",options="header",]
 |====
 |Tâche | Responsable(s) | Quand Prévisionnel | Quand effectif
-|Intégration Initale | bar |15/01/23| ...
-|Intégration PAN3 finalisée | bar |15/01/23| ...
+|Intégration Initiale | Charlotte-Alicia Bouée |15/01/23| ...
+|Intégration PAN3 finalisée | Ilias Ramim |15/01/23| ...
 |Préparation / répétition PAN3 | bar |15/01/23| ...
 |Démo PAN4 finalisée | bar |15/01/23| ...
 |Préparation Poster PAN4 | bar |15/01/23| ...
