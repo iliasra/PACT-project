@@ -47,13 +47,36 @@ disponibles de ce que vous allez produire (coder) vous-même. Vous ne
 devez pas réinventer la roue, mais vous ne devez pas non plus avoir votre
 projet tout fait en encapsulant un programme déjà existant.
 
-===== NomBloc1
+===== Bracelet utilisateur
 
-Description textuelle du bloc 1.
+Le bracelet permet à une potentielle victime d'alerter le pôle REC en 
+cas de problème, en appuyant sur un bouton contenue dans le bracelet.
+Le système contenue dans le bracelet envoie des signaux Bluetooth aux balises
+Raspberry Pi, qui permettront de géolocaliser grossièrement le bracelet de la victime.
 
-===== NomBloc2
+===== Balises Raspberry Pi
 
-Description textuelle du bloc 1.
+Le rôle des balises est de recevoir les signaux provenant des bracelets. En fonction de l'intensité
+du signal perçu, la balise envoie un signal au serveur.
+
+===== Serveur
+
+Le serveur reçoit les signaux des différentes balises, et calcule alors la position du bracelet.
+Le serveur s'occupe aussi de recevoir des requêtes de connexion/création de compte provenant des téléphones 
+utilisateurs. Il peut alors communiquer avec la BDD pour mettre à jour les données utilisateurs. 
+
+===== Base De Données
+
+La base de données stocke les différentes données utilisateurs: noms, prénoms, photos.
+
+===== Application
+
+L'application a deux versions interfaces différentes: une pour les membres du pôle REC, une pour les 
+utilisateurs.
+Du côté utilisateur, l'interface permet de se créer/connecter à un compte, d'entrer ses informations
+(photo, informations complémentaires), et éventuellement d'annuler une alerte déclenchée par erreur.
+Du côté REc, l'interface permet de répondre à une alerte, de visualiser la position de la victime dans 
+zone couverte par la géolocalisation, ainsi que d'afficher la photo de la personne appelant de l'aide.
 
 *Exemple utilisant http://blockdiag.com/en/actdiag/index.html[actdiag]*
 **(Vous pouvez, bien sûr, utiliser votre outil de dessin préféré).**
