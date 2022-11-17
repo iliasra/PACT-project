@@ -1,5 +1,6 @@
 === Tableau détaillé des tâches
 
+////
 ****Note : 2 pages max - les fiches modules seront placées en annexe,
 elles doivent être rédigées avec l’expert.****
 
@@ -17,7 +18,7 @@ Reprenez et complétez le tableau suivant en précisant les différentes tâches
 sous-tâches ainsi que le (ou les) critères de réussite pour l'intégration au
 PAN3. La définition des critères de réussite doit se faire en accord avec les
 experts.
-
+////
 [cols=",,^",options="header",]
 |====
 | Tâche | Description                                           | Critères de réussite pour l'intégration au PAN3
