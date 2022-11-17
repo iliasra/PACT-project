@@ -56,9 +56,9 @@ est déjà utilisé par de nombreuses entreprises. C’est pourquoi l’innovati
 avons décidé d’apporter à ce projet se concentre sur la géolocalisation en intérieur. 
 Contrairement aux autres bracelets qui envoient des messages qui ne seront probablement 
 pas lus par le pôle REC pendant la soirée, notre bracelet enverra un signal à des balises 
-codées avec des Rasperry Pi qui enverront la localisation directement au téléphone d’un 
-membre du pôle REC via l’application. L’alerte avec géolocalisation permet d’arrêter plus 
-rapidement l’agression qu’un simple message. 
+codées avec des Rasperry Pi, puis le serveur calcule et envoie la localisation directement 
+au téléphone d’un membre du pôle REC via l’application. L’alerte avec géolocalisation 
+permet d’arrêter plus rapidement l’agression qu’un simple message. 
 
 
 
