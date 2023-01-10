@@ -1,12 +1,12 @@
 import React from 'react';
 import { SafeAreaView, StyleSheet, Text, useColorScheme, View } from 'react-native';
-import RegisterScreen from './src/screens/RegisterScreen';
 import SignInScreen from './src/screens/SignInScreen/SignInScreen';
+import RegisterScreen from './src/screens/RegisterScreen';
 
 const App = () => {
   return (
     <SafeAreaView style={styles.root}>
-      <SignInScreen />
+      <RegisterScreen />
     </SafeAreaView>
   );
 }
