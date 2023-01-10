@@ -1,52 +1,42 @@
 import React, {useState} from "react"
-import {View, Text, StyleSheet, ScrollView, TouchableNativeFeedback, NavigatorIOS} from 'react-native'
+import {View, Text, StyleSheet, ScrollView} from 'react-native'
 import CustomInput from "../../components/CustomInput"
 import CustomButton from "../../components/CustomButton"
-import {useNavigation} from "@react-navigation/native"
+import {useNavigation} from '@react-navigation/native'
 
-const RegisterScreen = () => {
+const ForgotPasswordScreen = () => {
     const [email, setEmail] = useState('');
-    const [password, setPasswrord] = useState('');
-    const [passwordRepeat, setPasswordRepeat] = useState('');
     const navigation = useNavigation();
+   
+    const onForgotPressed = () => {
 
-    const onRegisterPressed = () => {
-        console.warn("Créer un compte")
+        navigation.navigate("NewPasswordScreen"); 
     }
 
     const onSignInPressed = () => {
-        navigation.navigate('SignIn')
+
+        navigation.navigate("SignIn")
     }
 
     return (
         <ScrollView>
         <View style={styles.root}>
-            <Text style={styles.title}>Créer un compte</Text>
+            <Text style={styles.title}>Réinitialisez votre mot de passe</Text>
 
             <CustomInput 
                 placeholder="Entrez votre adresse Email" 
                 value={email} 
                 setValue={setEmail} 
                 secureTextEntry={false}/>
-            <CustomInput 
-                placeholder="Entrez votre mot de passe" 
-                value={password} 
-                setValue={setPasswrord} 
-                secureTextEntry={true}/>
-            <CustomInput 
-                placeholder="Confirmez votre mot de passe" 
-                value={passwordRepeat} 
-                setValue={setPasswordRepeat} 
-                secureTextEntry={true}/>
             
             <CustomButton 
-            text="Créer un compte" 
-            onPress={onRegisterPressed}
+            text="Envoyer un mail de réinitialisation " 
+            onPress={onForgotPressed}
             type ="PRIMARY"
             />
 
             <CustomButton 
-            text="Vous avez un compte? Connectez-vous!"
+            text="Retourner à la page de connexion"
             onPress={onSignInPressed}
             type="TERTIARY"
             />
@@ -76,4 +66,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default RegisterScreen
+export default ForgotPasswordScreen

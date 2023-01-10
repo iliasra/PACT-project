@@ -1,24 +1,30 @@
 import React, {useState} from "react"
 import {View, Text, Image, StyleSheet, useWindowDimensions, ScrollView} from 'react-native'
-import { NavigationContainer } from "@react-navigation/native"
 import Logo from '../../../assets/images/SquareLogo.jpg'
 import CustomInput from "../../components/CustomInput"
 import CustomButton from "../../components/CustomButton"
+import {useNavigation} from '@react-navigation/native'
 
 const SignInScreen = () => {
     const [username, setUsername] = useState('');
     const [password, setPasswrord] = useState('');
 
+    const navigation = useNavigation();
+
     const onSignInPressed = () => {
-        console.warn("Se connecter")
+
+
+        navigation.navigate('HomeScreen');
     }
 
     const onForgotPressed = () => {
-        console.warn("Mot de passe oublié?")
+
+        navigation.navigate('ForgotPasswordScreen')
     }
 
     const onSignUpPressed = () => {
-        console.warn("Créer un compte")
+
+        navigation.navigate('RegisterScreen')
     }
 
     const {height} = useWindowDimensions();
