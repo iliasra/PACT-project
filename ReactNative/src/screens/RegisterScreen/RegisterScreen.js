@@ -3,15 +3,19 @@ import {View, Text, StyleSheet, ScrollView, TouchableNativeFeedback, NavigatorIO
 import CustomInput from "../../components/CustomInput"
 import CustomButton from "../../components/CustomButton"
 import {useNavigation} from "@react-navigation/native"
+import axios from "axios";
 
 const RegisterScreen = () => {
     const [email, setEmail] = useState('');
     const [password, setPasswrord] = useState('');
     const [passwordRepeat, setPasswordRepeat] = useState('');
+    const [text, setText] = useState('');
     const navigation = useNavigation();
 
-    const onRegisterPressed = () => {
+
+    const onRegisterPressed = async () => {
         console.warn("Créer un compte")
+        setText('text')
     }
 
     const onSignInPressed = () => {
@@ -50,6 +54,8 @@ const RegisterScreen = () => {
             onPress={onSignInPressed}
             type="TERTIARY"
             />
+
+            <Text>{text}</Text>
 
         </View>
         </ScrollView>
