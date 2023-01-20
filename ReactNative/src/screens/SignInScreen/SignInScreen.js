@@ -78,8 +78,8 @@ const styles = StyleSheet.create({
     },
     logo: {
         width: '70%',
-        maxWidth: 300,
-        maxHeight: 200,
+        maxWidth: 500,
+        maxHeight: 375,
         marginBottom: 20,
     },
     signUp: {
