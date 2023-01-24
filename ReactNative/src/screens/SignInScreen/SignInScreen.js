@@ -42,7 +42,7 @@ const SignInScreen = () => {
                 setValue={setUsername} 
                 secureTextEntry={false}/>
             <CustomInput 
-                placeholder="Entrez votre mot de passe" 
+                placeholder="Entrez votre mot de passe." 
                 value={password} 
                 setValue={setPasswrord} 
                 secureTextEntry={true}/>
