@@ -1,8 +1,8 @@
 import React, {useState} from "react"
 import {View, Text, Image, StyleSheet, useWindowDimensions, ScrollView} from 'react-native'
-import Logo from 'ReactNative/assets/images/non.jpg'
-import CustomInput from "ReactNative/src/components/CustomInput"
-import CustomButton from "ReactNative/src/components/CustomButton"
+import Logo from "../../../assets/images/non_transparent.png"
+import CustomInput from "../../components/CustomInput";
+import CustomButton from "../../components/CustomButton"
 import {useNavigation} from '@react-navigation/native'
 
 const SignInScreen = () => {

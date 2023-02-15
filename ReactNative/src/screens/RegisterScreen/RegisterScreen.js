@@ -1,7 +1,7 @@
 import React, {useState} from "react"
 import {View, Text, StyleSheet, ScrollView, TouchableNativeFeedback, NavigatorIOS} from 'react-native'
-import CustomInput from "ReactNative/src/components/CustomInput"
-import CustomButton from "ReactNative/src/components/CustomButton"
+import CustomInput from "../../components/CustomInput";
+import CustomButton from "../../components/CustomButton"
 import {useNavigation} from "@react-navigation/native"
 import axios from "axios";
 
