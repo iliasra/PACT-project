@@ -1,44 +1,46 @@
 import React, {useState} from "react"
-import {View, Text, Image, StyleSheet, useWindowDimensions, ScrollView} from 'react-native'
+import {View, Text, Image, StyleSheet, useWindowDimensions, ScrollView} from "react-native"
 import Logo from "../../../assets/images/non_transparent.png"
 import CustomInput from "../../components/CustomInput";
 import CustomButton from "../../components/CustomButton"
 import {useNavigation} from '@react-navigation/native'
 
+
 //dropdown imports
-import Dropdown from 'react-dropdown';
-import 'react-dropdown/style.css';
+import { Dropdown } from 'react-native-element-dropdown';
 
 
 const SignInScreen = () => {
     const [username, setUsername] = useState('');
     const [password, setPasswrord] = useState('');
 
+    
     //dropdownconsts
-    const options = [
-        'élève', 'REC'];
-        
-    const defaultOption = options[0];
+    const dropdowndata = [
+        { label: 'Student', value: 'student' },
+        { label: 'REC', value: 'REC' }
+    ];
+    const [selectedValue, setSelectedValue] = useState("tracos");
+
 
     const navigation = useNavigation();
 
     const onSignInPressed = () => {
-
-
         navigation.navigate('HomeScreen');
     }
 
     const onForgotPressed = () => {
-
         navigation.navigate('ForgotPasswordScreen')
     }
 
     const onSignUpPressed = () => {
-
         navigation.navigate('RegisterScreen')
     }
 
     const {height} = useWindowDimensions();
+    
+    
+
     return (
         <ScrollView>
         <View style={styles.root}>
@@ -58,8 +60,20 @@ const SignInScreen = () => {
                 setValue={setPasswrord} 
                 secureTextEntry={true}/>
             
-            {/*dropdown menu*/}
-            <Dropdown options={options} onChange={this._onSelect} value={defaultOption} placeholder="Eleve ou REC?" />;
+            
+            <Dropdown
+                /*labelfield='category picker'
+                data={dropdowndata} 
+                value={selectedValue}
+                onChangeText={setSelectedValue}
+                placeholder="category"
+                searchPlaceholder="quelle categorie?"
+                placeholderStyle={styles.placeholderStyle}
+                selectedTextStyle = {styles.selectedTextStyle}
+                styles={[styles.dropdown]}
+                inputSearchStyle={styles.inputSearchStyle}*/
+                />
+
 
             <CustomButton 
             text="Se connecter" 
@@ -98,7 +112,47 @@ const styles = StyleSheet.create({
     },
     signUp: {
         fontWeight: 'bold'
-    }
-});
+    },
+
+    container: {
+        backgroundColor: 'white',
+        padding: 16,
+    },
+    dropdown: {
+        height: 50,
+        borderColor: 'gray',
+        borderWidth: 0.5,
+        borderRadius: 8,
+        paddingHorizontal: 8,
+    },
+    icon: {
+        marginRight: 5,
+    },
+    label: {
+        position: 'absolute',
+        backgroundColor: 'white',
+        left: 22,
+        top: 8,
+        zIndex: 999,
+        paddingHorizontal: 8,
+        fontSize: 14,
+    },
+    placeholderStyle: {
+        fontSize: 16,
+    },
+    selectedTextStyle: {
+        fontSize: 16,
+    },
+    iconStyle: {
+        width: 20,
+        height: 20,
+    },
+    inputSearchStyle: {
+        height: 40,
+        fontSize: 16,
+    },
+    });
+
 
 export default SignInScreen
+
