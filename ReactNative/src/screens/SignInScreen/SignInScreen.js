@@ -1,22 +1,37 @@
-import React, {useState} from "react"
+import React, {useState, useContext} from "react"
 import {View, Text, Image, StyleSheet, useWindowDimensions, ScrollView} from 'react-native'
 import Logo from '../../../assets/images/SquareLogo.jpg'
 import CustomInput from "../../components/CustomInput"
 import CustomButton from "../../components/CustomButton"
 import {useNavigation} from '@react-navigation/native'
+import { io } from "socket.io-client";
+import SocketContext from '../../SocketContext.js';
 
 const SignInScreen = () => {
+
+    const socket = useContext(SocketContext);
     const [username, setUsername] = useState('');
     const [password, setPasswrord] = useState('');
-
     const navigation = useNavigation();
 
-    const onSignInPressed = () => {
 
+    const onSignInPressed = () => {
+    
+      socket.emit("id:", username);
+      socket.emit("password:", password); 
+
+      socket.on("disconnect", () => {
+        console.log(socket.connected); // false
+      });
+    
+      socket.on("hello", (arg) => {
+        console.log(arg); // world
+      });
 
         navigation.navigate('HomeScreen');
-    }
 
+    }
+    
     const onForgotPressed = () => {
 
         navigation.navigate('ForgotPasswordScreen')

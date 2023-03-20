@@ -3,7 +3,7 @@ import {View, Text, StyleSheet, ScrollView, TouchableNativeFeedback, NavigatorIO
 import CustomInput from "../../components/CustomInput"
 import CustomButton from "../../components/CustomButton"
 import {useNavigation} from "@react-navigation/native"
-import axios from "axios";
+
 
 const RegisterScreen = () => {
     const [email, setEmail] = useState('');
@@ -21,7 +21,7 @@ const RegisterScreen = () => {
     const onSignInPressed = () => {
         navigation.navigate('SignIn')
     }
-
+    
     return (
         <ScrollView>
         <View style={styles.root}>
