@@ -5,9 +5,20 @@ import CustomInput from "../../components/CustomInput";
 import CustomButton from "../../components/CustomButton"
 import {useNavigation} from '@react-navigation/native'
 
+//dropdown imports
+import Dropdown from 'react-dropdown';
+import 'react-dropdown/style.css';
+
+
 const SignInScreen = () => {
     const [username, setUsername] = useState('');
     const [password, setPasswrord] = useState('');
+
+    //dropdownconsts
+    const options = [
+        'élève', 'REC'];
+        
+    const defaultOption = options[0];
 
     const navigation = useNavigation();
 
@@ -47,6 +58,9 @@ const SignInScreen = () => {
                 setValue={setPasswrord} 
                 secureTextEntry={true}/>
             
+            {/*dropdown menu*/}
+            <Dropdown options={options} onChange={this._onSelect} value={defaultOption} placeholder="Eleve ou REC?" />;
+
             <CustomButton 
             text="Se connecter" 
             onPress={onSignInPressed}
