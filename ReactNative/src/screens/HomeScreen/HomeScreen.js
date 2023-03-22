@@ -3,6 +3,7 @@ import {View, Text, StyleSheet, ScrollView} from 'react-native'
 import CustomInput from "../../components/CustomInput"
 import CustomButton from "../../components/CustomButton"
 import {useNavigation} from '@react-navigation/native'
+import CustomLogOut from "../../components/CustomLogOut"
 
 const HomeScreen = () => {
     const navigation = useNavigation();
@@ -17,24 +18,45 @@ const HomeScreen = () => {
 
     return (
         <ScrollView>
-        <View style={styles.root}>
-            <Text style={styles.megatitle}>Home Screen</Text>
-
-            <CustomButton 
-            text="Log out"
+        <View style={styles.root1}>
+            <Text style={styles.megatitle}>Balance ton bip!</Text>
+            <CustomLogOut 
+            text="bouton 1"
             onPress={logOutButton}
-            type="TERTIARY"
+            type="PRIMARY"
             />
-
+            <View style={styles.root2}>
+            <CustomLogOut 
+                text="bouton 2"
+                onPress={logOutButton}
+                type="PRIMARY"
+            />
         </View>
+        </View>
+
+        
         </ScrollView>
+        /*<View style={styles.root2}>
+            <CustomLogOut 
+                text="bouton 2"
+                onPress={logOutButton}
+                type="PRIMARY"
+            />
+        </View>*/
     );
 };
 
 const styles = StyleSheet.create({
-    root:{
+    root1:{
         alignItems: 'center',
         padding: 20,
+    },
+    root2:{
+        alignItems: 'center',
+        padding: 20,
+        flex:1,
+        position:"relative",
+        bottom:
     },
     logo: {
         width: '70%',
@@ -47,8 +69,8 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: '#051C60',
         margin: 10,
-
     },
+
     megatitle:{
         fontSize: 30,
         fontWeight: 'bold',

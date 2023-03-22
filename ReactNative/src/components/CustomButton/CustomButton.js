@@ -20,6 +20,7 @@ const styles = StyleSheet.create({
         borderRadius: 5,
     },
 
+
     container_PRIMARY: {
         backgroundColor: '#FCBCB8',
     },

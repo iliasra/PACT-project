@@ -17,6 +17,7 @@ const RegisterScreen = () => {
     const onRegisterPressed = async () => {
         console.warn("Créer un compte")
         setText('text')
+        navigation.navigate('HomeScreen')
     }
     const onAttemptConnection = () => {
         console.warn("veuillez attendre")
