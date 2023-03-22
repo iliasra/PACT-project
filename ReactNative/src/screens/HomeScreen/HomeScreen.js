@@ -5,7 +5,6 @@ import CustomButton from "../../components/CustomButton"
 import {useNavigation} from '@react-navigation/native'
 
 const HomeScreen = () => {
-    const [test, setTest] = useState('');
     const navigation = useNavigation();
    
     const onAttemptConnection = () => {
@@ -19,22 +18,10 @@ const HomeScreen = () => {
     return (
         <ScrollView>
         <View style={styles.root}>
-            <Text style={styles.title}>Home Screen</Text>
-
-            <CustomInput 
-                placeholder="ça marche?" 
-                value={test} 
-                setValue={setTest} 
-                secureTextEntry={false}/>
-            
-            <CustomButton 
-            text="Connecter mon bipeur" 
-            onPress={onAttemptConnection}
-            type ="PRIMARY"
-            />
+            <Text style={styles.megatitle}>Home Screen</Text>
 
             <CustomButton 
-            text="Log out?"
+            text="Log out"
             onPress={logOutButton}
             type="TERTIARY"
             />
@@ -61,6 +48,13 @@ const styles = StyleSheet.create({
         color: '#051C60',
         margin: 10,
 
+    },
+    megatitle:{
+        fontSize: 30,
+        fontWeight: 'bold',
+        color: '#051C60',
+        margin: 15,
+        padding:30,
     },
 });
 

@@ -10,6 +10,7 @@ const RegisterScreen = () => {
     const [password, setPasswrord] = useState('');
     const [passwordRepeat, setPasswordRepeat] = useState('');
     const [text, setText] = useState('');
+    const [pole, setPole] = useState('');
     const navigation = useNavigation();
 
 
@@ -17,6 +18,10 @@ const RegisterScreen = () => {
         console.warn("Créer un compte")
         setText('text')
     }
+    const onAttemptConnection = () => {
+        console.warn("veuillez attendre")
+    }
+    const [test, setTest] = useState('');
 
     const onSignInPressed = () => {
         navigation.navigate('SignIn')
@@ -25,7 +30,7 @@ const RegisterScreen = () => {
     return (
         <ScrollView>
         <View style={styles.root}>
-            <Text style={styles.title}>Créer un compte</Text>
+            <Text style={styles.megatitle}>Créer un compte</Text>
 
             <CustomInput 
                 placeholder="Entrez votre adresse Email" 
@@ -42,9 +47,21 @@ const RegisterScreen = () => {
                 value={passwordRepeat} 
                 setValue={setPasswordRepeat} 
                 secureTextEntry={true}/>
+            <CustomInput 
+                placeholder="REC ou élève?" 
+                value={pole} 
+                setValue={setPole} 
+                secureTextEntry={false}/>
+            
+            <CustomInput 
+                placeholder="Numero de bipeur" 
+                value={test} 
+                setValue={setTest} 
+                secureTextEntry={false}/>
+            
             
             <CustomButton 
-            text="Créer un compte" 
+            text="Créer un compte et connecter mon bipeur!" 
             onPress={onRegisterPressed}
             type ="PRIMARY"
             />
@@ -79,6 +96,13 @@ const styles = StyleSheet.create({
         color: '#051C60',
         margin: 10,
 
+    },
+    megatitle:{
+        fontSize: 30,
+        fontWeight: 'bold',
+        color: '#051C60',
+        margin: 15,
+        padding:30,
     },
 });
 

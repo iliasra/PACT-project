@@ -6,22 +6,10 @@ import CustomButton from "../../components/CustomButton"
 import {useNavigation} from '@react-navigation/native'
 
 
-//dropdown imports
-import { Dropdown } from 'react-native-element-dropdown';
-
 
 const SignInScreen = () => {
     const [username, setUsername] = useState('');
     const [password, setPasswrord] = useState('');
-
-    
-    //dropdownconsts
-    const dropdowndata = [
-        { label: 'Student', value: 'student' },
-        { label: 'REC', value: 'REC' }
-    ];
-    const [selectedValue, setSelectedValue] = useState("tracos");
-
 
     const navigation = useNavigation();
 
@@ -39,7 +27,6 @@ const SignInScreen = () => {
 
     const {height} = useWindowDimensions();
     
-    
 
     return (
         <ScrollView>
@@ -54,26 +41,12 @@ const SignInScreen = () => {
                 value={username} 
                 setValue={setUsername} 
                 secureTextEntry={false}/>
+            
             <CustomInput 
                 placeholder="Entrez votre mot de passe" 
                 value={password} 
                 setValue={setPasswrord} 
                 secureTextEntry={true}/>
-            
-            
-            <Dropdown
-                /*labelfield='category picker'
-                data={dropdowndata} 
-                value={selectedValue}
-                onChangeText={setSelectedValue}
-                placeholder="category"
-                searchPlaceholder="quelle categorie?"
-                placeholderStyle={styles.placeholderStyle}
-                selectedTextStyle = {styles.selectedTextStyle}
-                styles={[styles.dropdown]}
-                inputSearchStyle={styles.inputSearchStyle}*/
-                />
-
 
             <CustomButton 
             text="Se connecter" 
@@ -113,43 +86,12 @@ const styles = StyleSheet.create({
     signUp: {
         fontWeight: 'bold'
     },
-
-    container: {
-        backgroundColor: 'white',
-        padding: 16,
-    },
-    dropdown: {
-        height: 50,
-        borderColor: 'gray',
-        borderWidth: 0.5,
-        borderRadius: 8,
-        paddingHorizontal: 8,
-    },
-    icon: {
-        marginRight: 5,
-    },
-    label: {
-        position: 'absolute',
-        backgroundColor: 'white',
-        left: 22,
-        top: 8,
-        zIndex: 999,
-        paddingHorizontal: 8,
-        fontSize: 14,
-    },
-    placeholderStyle: {
-        fontSize: 16,
-    },
-    selectedTextStyle: {
-        fontSize: 16,
-    },
-    iconStyle: {
-        width: 20,
-        height: 20,
-    },
-    inputSearchStyle: {
-        height: 40,
-        fontSize: 16,
+    megatitle:{
+        fontSize: 30,
+        fontWeight: 'bold',
+        color: '#051C60',
+        margin: 15,
+        padding:30,
     },
     });
 
