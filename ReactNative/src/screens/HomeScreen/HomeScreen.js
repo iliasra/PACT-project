@@ -1,11 +1,11 @@
-//import react
+//les import react
 import React, {useState, useContext} from "react"
 import {View, Text, StyleSheet, ScrollView, Alert} from 'react-native'
 import {useNavigation} from '@react-navigation/native'
-//import boutons
+//les import boutons
 import CustomLogOut from "../../components/CustomLogOut"
 import BoutonOK from "../../components/BoutonOK"
-//import server
+//l'import server
 import SocketContext from "../../server/SocketContext.js";
 
 const HomeScreen = () => {
@@ -57,19 +57,19 @@ const HomeScreen = () => {
 
             {/*shapes*/}
             <View style={zone1NeedsHelp}>
-                <Text style={styles.boxtitle}>Stand Photo</Text>
+                <Text style={styles.boxtitle}>Zone 1</Text>
             </View>
            
             <View style={zone2NeedsHelp}>
-                <Text style={styles.boxtitle}>Scène</Text>
+                <Text style={styles.boxtitle}>Zone 2</Text>
             </View>
             
             <View style={zone3NeedsHelp}>
-                <Text style={styles.boxtitle}>Entrée</Text>
+                <Text style={styles.boxtitle}>Zone 3</Text>
             </View>
             
             <View style={zone4NeedsHelp}>
-                <Text style={styles.boxtitle}>Bar</Text>
+                <Text style={styles.boxtitle}>Zone 4</Text>
             </View>
 
 
@@ -130,9 +130,9 @@ const styles = StyleSheet.create({
         marginBottom: 20,
     },
     boxtitle:{
-        fontSize: 15,
+        fontSize: 16,
         color: '#051C60',
-        padding:25,
+        padding:20,
     },
 
     megatitle:{
