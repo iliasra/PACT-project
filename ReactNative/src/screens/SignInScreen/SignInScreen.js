@@ -4,7 +4,6 @@ import Logo from '../../../assets/images/SquareLogo.jpg'
 import CustomInput from "../../components/CustomInput"
 import CustomButton from "../../components/CustomButton"
 import {useNavigation} from '@react-navigation/native'
-import { io } from "socket.io-client";
 import SocketContext from '../../SocketContext.js';
 
 const SignInScreen = () => {
@@ -12,13 +11,26 @@ const SignInScreen = () => {
     const socket = useContext(SocketContext);
     const [username, setUsername] = useState('');
     const [password, setPasswrord] = useState('');
+    const [connectionRefused, setConnectionRefused] = useState('');
     const navigation = useNavigation();
 
 
     const onSignInPressed = () => {
     
-      socket.emit("id:", username);
-      socket.emit("password:", password); 
+      
+      socket.emit("username:", username);
+      socket.emit("password:", password);
+      socket.emit("ConnectionRequest"); 
+      //socket.emit("photo:");
+      
+      socket.on("ConnectionAccepted", () => {
+        console.log("ConnectionAccepted");
+        navigation.navigate('HomeScreen');
+      });
+        socket.on("ConnectionRefused", () => {
+        console.log("ConnectionRefused");
+        setConnectionRefused('Connexion refusée: mot de passe ou identifiant incorrect');
+        });
 
       socket.on("disconnect", () => {
         console.log(socket.connected); // false
@@ -27,8 +39,6 @@ const SignInScreen = () => {
       socket.on("hello", (arg) => {
         console.log(arg); // world
       });
-
-        navigation.navigate('HomeScreen');
 
     }
     
@@ -81,6 +91,7 @@ const SignInScreen = () => {
             onPress={onSignUpPressed}
             type ="PRIMARY"
             />
+            <Text style={styles.connectionRefused}>{connectionRefused}</Text>
         </View>
         </ScrollView>
     );
@@ -99,6 +110,13 @@ const styles = StyleSheet.create({
     },
     signUp: {
         fontWeight: 'bold'
+    },
+    connectionRefused: {
+        marginTop: 10,
+        textAlign: 'center',
+        fontSize: 15,
+        color: 'red',
+        fontWeight: 'bold',
     }
 });
 
