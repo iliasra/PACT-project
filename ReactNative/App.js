@@ -1,13 +1,15 @@
 import React from 'react';
 import { SafeAreaView, StyleSheet, Text, useColorScheme, View } from 'react-native';
 import Navigation from './src/navigation';
-import axios from 'axios';
+import SocketProvider from './src/server/SocketProvider';
 
 const App = () => {
   return (
-    <SafeAreaView style={styles.root}>
-      <Navigation />
-    </SafeAreaView>
+    <SocketProvider>
+      <SafeAreaView style={styles.root}>
+        <Navigation />
+      </SafeAreaView>
+    </SocketProvider>
   );
 } 
 
