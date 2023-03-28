@@ -1,6 +1,6 @@
 import React, {useState, useContext} from "react"
 import {View, Text, Image, StyleSheet, useWindowDimensions, ScrollView} from 'react-native'
-import Logo from '../../../assets/images/SquareLogo.jpg'
+import Logo from '../../../assets/images/SquareLogo.png'
 import CustomInput from "../../components/CustomInput"
 import CustomButton from "../../components/CustomButton"
 import {useNavigation} from '@react-navigation/native'
@@ -36,9 +36,7 @@ const SignInScreen = () => {
         console.log(socket.connected); // false
       });
     
-      socket.on("hello", (arg) => {
-        console.log(arg); // world
-      });
+      navigation.navigate('HomeScreen');
 
     }
     
@@ -62,7 +60,7 @@ const SignInScreen = () => {
             />
 
             <CustomInput 
-                placeholder="Entrez votre adresse Email" 
+                placeholder="Entrez votre identifiant" 
                 value={username} 
                 setValue={setUsername} 
                 secureTextEntry={false}/>

@@ -9,6 +9,7 @@ import SocketContext from '../../SocketContext.js';
 const RegisterScreen = () => {
     const socket = useContext(SocketContext);
     const [pseudo, setPseudo] = useState('');
+    const [numbip, setNumbip] = useState('');
     const [isEnabled, setIsEnabled] = useState(false);
     const toggleSwitch = () => setIsEnabled(previousState => !previousState);
     const [isEnabled2, setIsEnabled2] = useState(false);
@@ -38,7 +39,6 @@ const RegisterScreen = () => {
     }
 
     var photo = 0;
-    var numbip = 0;
 
     const onRegisterPressed = async () => {
         if (password!=passwordRepeat){
@@ -55,6 +55,7 @@ const RegisterScreen = () => {
             socket.emit("photo:", photo);
             socket.emit("numbip:", numbip);
             socket.emit("sexe:", sex);
+            socket.emit("numbip:", numbip);
             socket.emit("add");
             setText(sex);
         }
@@ -117,6 +118,11 @@ const RegisterScreen = () => {
                 placeholder="Entrez votre nom" 
                 value={nom} 
                 setValue={setNom} 
+                secureTextEntry={false}/>
+                <CustomInput 
+                placeholder="Entrez l'identifiant de votre bipeur" 
+                value={numbip} 
+                setValue={setNumbip} 
                 secureTextEntry={false}/>
             <CustomButton 
             text="Créer un compte" 
