@@ -1,12 +1,6 @@
-<<<<<<< HEAD
 import React, {useState, useContext} from "react"
 import {View, Text, StyleSheet, ScrollView , Switch} from 'react-native'
 import CustomInput from "../../components/CustomInput"
-=======
-import React, {useState} from "react"
-import {View, Text, StyleSheet, ScrollView, TouchableNativeFeedback, NavigatorIOS} from 'react-native'
-import CustomInput from "../../components/CustomInput";
->>>>>>> origin/ReactColin
 import CustomButton from "../../components/CustomButton"
 import {useNavigation} from "@react-navigation/native"
 import SocketContext from '../../SocketContext.js';
@@ -48,7 +42,6 @@ const RegisterScreen = () => {
     var photo = 0;
 
     const onRegisterPressed = async () => {
-<<<<<<< HEAD
         if (password!=passwordRepeat){
             console.warn("Les mots de passe ne correspondent pas");
             setText('Les mots de passe ne correspondent pas');
@@ -68,16 +61,10 @@ const RegisterScreen = () => {
             setText(sex);
         }
         
-=======
-        console.warn("Créer un compte")
-        setText('text')
-        navigation.navigate('HomeScreen')
->>>>>>> origin/ReactColin
     }
     const onAttemptConnection = () => {
         console.warn("veuillez attendre")
     }
-    const [test, setTest] = useState('');
 
     const onSignInPressed = () => {
         navigation.navigate('SignIn')
@@ -103,7 +90,6 @@ const RegisterScreen = () => {
                 value={passwordRepeat} 
                 setValue={setPasswordRepeat} 
                 secureTextEntry={true}/>
-<<<<<<< HEAD
                 <Text style={{marginTop:10}}>Choisissez votre sexe:</Text>
             <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 10, marginTop:10, }}>
             <Text style={{ marginRight: 8 }}>Homme</Text>
@@ -142,21 +128,6 @@ const RegisterScreen = () => {
                 value={numbip} 
                 setValue={setNumbip} 
                 secureTextEntry={false}/>
-=======
-            <CustomInput 
-                placeholder="REC ou élève?" 
-                value={pole} 
-                setValue={setPole} 
-                secureTextEntry={false}/>
-            
-            <CustomInput 
-                placeholder="Numero de bipeur" 
-                value={test} 
-                setValue={setTest} 
-                secureTextEntry={false}/>
-            
-            
->>>>>>> origin/ReactColin
             <CustomButton 
             text="Créer un compte et connecter mon bipeur!" 
             onPress={onRegisterPressed}
@@ -193,13 +164,11 @@ const styles = StyleSheet.create({
         color: '#051C60',
         margin: 10,
     },
-<<<<<<< HEAD
     container: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
   },
-=======
     megatitle:{
         fontSize: 30,
         fontWeight: 'bold',
@@ -207,7 +176,6 @@ const styles = StyleSheet.create({
         margin: 15,
         padding:30,
     },
->>>>>>> origin/ReactColin
 });
 
 export default RegisterScreen
