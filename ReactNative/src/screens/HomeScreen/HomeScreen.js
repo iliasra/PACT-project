@@ -26,6 +26,14 @@ const HomeScreen = () => {
     const [textColor, setColor] = useState("#696969");
     const socket = useContext(SocketContext);
 
+    //style consts
+    const [zone1NeedsHelp, setZone1NeedsHelp] = useState(styles.squareZone1);
+    const [zone2NeedsHelp, setZone2NeedsHelp] = useState(styles.squareZone2);
+    const [zone3NeedsHelp, setZone3NeedsHelp] = useState(styles.squareZone3);
+    const [zone4NeedsHelp, setZone4NeedsHelp] = useState(styles.squareZone4);
+
+
+
     socket.on("hello", (arg) => {
         console.log(arg); // world
         setText(arg);
