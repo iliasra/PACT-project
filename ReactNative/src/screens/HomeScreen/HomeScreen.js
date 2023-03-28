@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, {useState, useContext} from "react";
 import {Text, View, StyleSheet, Image, Alert, ScrollView} from "react-native";
 import photoVictime from "../../../assets/images/photoVictime.jpg";
@@ -27,33 +26,21 @@ const HomeScreen = () => {
     const [textColor, setColor] = useState("#696969");
     const socket = useContext(SocketContext);
 
-=======
-//les import react
-import React, {useState, useContext} from "react"
-import {View, Text, StyleSheet, ScrollView, Alert} from 'react-native'
-import {useNavigation} from '@react-navigation/native'
-//les import boutons
-import CustomLogOut from "../../components/CustomLogOut"
-import BoutonOK from "../../components/BoutonOK"
-//l'import server
-import SocketContext from "../../server/SocketContext.js";
-
-const HomeScreen = () => {
-    const navigation = useNavigation();
     
-    const logOutButton = () => {
-        navigation.navigate("SignIn")
-    }
-    
->>>>>>> origin/ReactColin
-    //style consts
+        //style consts
     const [zone1NeedsHelp, setZone1NeedsHelp] = useState(styles.squareZone1);
     const [zone2NeedsHelp, setZone2NeedsHelp] = useState(styles.squareZone2);
     const [zone3NeedsHelp, setZone3NeedsHelp] = useState(styles.squareZone3);
     const [zone4NeedsHelp, setZone4NeedsHelp] = useState(styles.squareZone4);
+    const alertHandled =() => {
+        setZone1NeedsHelp({ ...styles.squareZone1});
+        setZone2NeedsHelp({ ...styles.squareZone2});
+        setZone3NeedsHelp({ ...styles.squareZone3});
+        setZone4NeedsHelp({ ...styles.squareZone4});
+    }
 
-<<<<<<< HEAD
 
+    
 
     socket.on("hello", (arg) => {
         console.log(arg); // world
@@ -61,6 +48,18 @@ const HomeScreen = () => {
     });
     socket.on('loc', (arg) => {
         setText('La victime se trouve dans la zone ' + arg);
+        switch (arg){
+            case 1: 
+            {setZone1NeedsHelp({ ...styles.squareZone1, backgroundColor: 'red' });};
+            case 2: 
+            {setZone2NeedsHelp({ ...styles.squareZone2, backgroundColor: 'red' });};
+            case 3: 
+            {setZone3NeedsHelp({ ...styles.squareZone3, backgroundColor: 'red' });};
+            case 4: 
+            {setZone4NeedsHelp({ ...styles.squareZone4, backgroundColor: 'red' });};
+
+
+        }
     });
     socket.on('photo', (arg) => {
             fetch('http://137.194.210.159:80/photo/' + arg)
@@ -113,6 +112,24 @@ const HomeScreen = () => {
             <Text style={{fontSize: 24, alignSelf: 'center',}}></Text>
             <Text style={{fontSize: 24, alignSelf: 'center',}}>{text}</Text>
 
+            {/*shapes*/}
+            <View style={zone1NeedsHelp}>
+                <Text style={styles.boxtitle}>Zone 1</Text>
+            </View>
+           
+            <View style={zone2NeedsHelp}>
+                <Text style={styles.boxtitle}>Zone 2</Text>
+            </View>
+            
+            <View style={zone3NeedsHelp}>
+                <Text style={styles.boxtitle}>Zone 3</Text>
+            </View>
+            
+            <View style={zone4NeedsHelp}>
+                <Text style={styles.boxtitle}>Zone 4</Text>
+            </View>
+
+
             <CustomButton 
             text="Image" 
             onPress={onPress}
@@ -124,6 +141,7 @@ const HomeScreen = () => {
                 setSource(RAS);
                 setAlertText('Aucune alerte n\'est à signaler');
                 setColor("#696969");
+                alertHandled;
             }}
             type="SEC"
             />
@@ -155,136 +173,7 @@ const styles = StyleSheet.create({
         marginTop: 15, 
         fontWeight: "600", 
         textAlign: true
-    }
-});
-
-export default HomeScreen;
-=======
-    //serveur
-    const socket = useContext(SocketContext);
-
-    //on recoit une alerte du serveur
-    socket.on("loc1",(arg) => {
-        {setZone1NeedsHelp({ ...styles.squareZone1, backgroundColor: 'red' });}})
-    socket.on("loc2",(arg) => {
-        {setZone2NeedsHelp({ ...styles.squareZone2, backgroundColor: 'red' });}})
-    socket.on("loc3",(arg) => {
-        {setZone3NeedsHelp({ ...styles.squareZone3, backgroundColor: 'red' });}})
-    socket.on("loc4",(arg) => {
-        {setZone4NeedsHelp({ ...styles.squareZone4, backgroundColor: 'red' });}})
-    
-
-    //une membre REC s'en est occupé
-    //au PAN3 on va pas s'occuper de la réponse au serveur quand le problème est terminé
-    const alertHandled =() => {
-        setZone1NeedsHelp({ ...styles.squareZone1});
-        setZone2NeedsHelp({ ...styles.squareZone2});
-        setZone3NeedsHelp({ ...styles.squareZone3});
-        setZone4NeedsHelp({ ...styles.squareZone4});
-    }
-    
-    //test ui
-    const alertTest = () => {
-        setZone1NeedsHelp({ ...styles.squareZone1, backgroundColor: 'red' })}
-
-    
-    return (
-        <ScrollView>
-        <View style={styles.root1}>
-            {/*title*/}
-            <Text style={styles.megatitle}>Balance ton bip!</Text>
-
-            {/*shapes*/}
-            <View style={zone1NeedsHelp}>
-                <Text style={styles.boxtitle}>Zone 1</Text>
-            </View>
-           
-            <View style={zone2NeedsHelp}>
-                <Text style={styles.boxtitle}>Zone 2</Text>
-            </View>
-            
-            <View style={zone3NeedsHelp}>
-                <Text style={styles.boxtitle}>Zone 3</Text>
-            </View>
-            
-            <View style={zone4NeedsHelp}>
-                <Text style={styles.boxtitle}>Zone 4</Text>
-            </View>
-
-
-            {/*declencher une alerte*/}
-            <View style={styles.root1}>
-            <CustomLogOut 
-                text="Déclencher une alerte test"
-                onPress={alertTest}
-                type="TERTIARY"
-            />
-            </View>
-
-            {/*alerte finie*/}
-            <View style={styles.root1}>
-            <BoutonOK 
-                text="Clear Alert"
-                onPress={alertHandled}
-                type="PRIMARY"
-            />
-            </View>
-
-            {/*Log Out Button*/}
-            <View style={styles.rootLogOut}>
-            <CustomLogOut 
-                text="Log Out"
-                onPress={logOutButton}
-                type="TERTIARY"
-            />
-            </View>
-
-        
-        
-        </View>
-        
-
-        
-        </ScrollView>
-    );
-};
-
-const styles = StyleSheet.create({
-    root1:{
-        alignItems: 'center',
-        padding: 20,
     },
-
-    rootLogOut:{
-        alignItems: 'center',
-        padding: 20,
-        flex:1,
-        position:"relative",
-        marginTop: 20
-    },
-    logo: {
-        width: '70%',
-        maxWidth: 300,
-        maxHeight: 200,
-        marginBottom: 20,
-    },
-    boxtitle:{
-        fontSize: 16,
-        color: '#051C60',
-        padding:20,
-    },
-
-    megatitle:{
-        fontSize: 30,
-        fontWeight: 'bold',
-        color: '#051C60',
-        margin: 15,
-        padding:30,
-        marginTop:30,
-        marginBottom:50
-    },
-    
-
     //les styles des carrés
     squareZone1: {
         width: 100,
@@ -325,8 +214,7 @@ const styles = StyleSheet.create({
         marginLeft:100,
         borderColor:"black",
         borderWidth:4
-        }
+        },
 });
 
-export default HomeScreen
->>>>>>> origin/ReactColin
+export default HomeScreen;
