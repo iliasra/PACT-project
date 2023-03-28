@@ -12,7 +12,7 @@ const App = () => {
       </SafeAreaView>
     </SocketProvider>
   );
-}
+} 
 
 const styles = StyleSheet.create({
   root: {
