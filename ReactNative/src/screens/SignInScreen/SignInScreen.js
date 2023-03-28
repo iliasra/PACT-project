@@ -6,6 +6,8 @@ import CustomButton from "../../components/CustomButton"
 import {useNavigation} from '@react-navigation/native'
 import SocketContext from '../../SocketContext.js';
 
+
+
 const SignInScreen = () => {
 
     const socket = useContext(SocketContext);
@@ -41,16 +43,16 @@ const SignInScreen = () => {
     }
     
     const onForgotPressed = () => {
-
         navigation.navigate('ForgotPasswordScreen')
     }
 
     const onSignUpPressed = () => {
-
         navigation.navigate('RegisterScreen')
     }
 
     const {height} = useWindowDimensions();
+    
+
     return (
         <ScrollView>
         <View style={styles.root}>
@@ -64,12 +66,13 @@ const SignInScreen = () => {
                 value={username} 
                 setValue={setUsername} 
                 secureTextEntry={false}/>
+            
             <CustomInput 
                 placeholder="Entrez votre mot de passe" 
                 value={password} 
                 setValue={setPasswrord} 
                 secureTextEntry={true}/>
-            
+
             <CustomButton 
             text="Se connecter" 
             onPress={onSignInPressed}
@@ -115,7 +118,16 @@ const styles = StyleSheet.create({
         fontSize: 15,
         color: 'red',
         fontWeight: 'bold',
+    },
+    megatitle:{
+        fontSize: 30,
+        fontWeight: 'bold',
+        color: '#051C60',
+        margin: 15,
+        padding:30,
     }
-});
+    });
+
 
 export default SignInScreen
+
