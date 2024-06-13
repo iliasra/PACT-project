@@ -25,7 +25,7 @@ while (True):
 
     try:
         loc = random.randint(1,4)
-        message = "/?bipID=" + "ff3000000b02" + "&loc=" + str(loc)
+        message = "/?bipID=" + "ff3000000b02" + "&loc=" + "3"##str(loc)
 
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         s.connect((site, port))
