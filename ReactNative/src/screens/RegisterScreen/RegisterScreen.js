@@ -1,10 +1,11 @@
 import React, {useState, useContext} from "react"
-import {View, Text, StyleSheet, ScrollView , Switch} from 'react-native'
+import {View, Text, StyleSheet, ScrollView , Switch, Image} from 'react-native'
 import CustomInput from "../../components/CustomInput"
 import CustomButton from "../../components/CustomButton"
 import {useNavigation} from "@react-navigation/native"
 import SocketContext from '../../SocketContext.js';
-
+import * as ImagePicker from 'expo-image-picker';
+import axios from 'axios';
 
 const RegisterScreen = () => {
     const socket = useContext(SocketContext);
@@ -21,6 +22,7 @@ const RegisterScreen = () => {
     const [text, setText] = useState('');
     const [pole, setPole] = useState('');
     const navigation = useNavigation();
+    const [image, setImage] = useState(null);
 
     //define a variable "sex" who will be equal to "homme" or "femme" depending on the switch
     var sex;
@@ -58,10 +60,47 @@ const RegisterScreen = () => {
             socket.emit("sexe:", sex);
             socket.emit("numbip:", numbip);
             socket.emit("add");
+
+            //upload image to server
+            const formData = new FormData();
+            formData.append('image.jpg', {
+              uri: image,
+              name: 'image.jpg',
+              type: 'image/jpeg',
+            });
+          
+            try {
+              const response = await axios.post('http://137.194.210.159:80/upload', formData, {
+                headers: {
+                  'Content-Type': 'multipart/form-data',
+                },
+              });
+          
+              console.log('Image upload successful');
+              console.log(response.data);
+            } catch (error) {
+              console.error('Image upload failed', error);
+            };
+
             setText(sex);
         }
         
     }
+
+    const pickImage = async () => {
+        // No permissions request is necessary for launching the image library
+        let result = await ImagePicker.launchImageLibraryAsync({
+          mediaTypes: ImagePicker.MediaTypeOptions.All,
+          allowsEditing: true,
+          aspect: [4, 3],
+          quality: 1,
+        });
+        console.log(result);
+        if (!result.canceled) {
+            setImage(result.assets[0].uri);
+          }
+    }
+
     const onAttemptConnection = () => {
         console.warn("veuillez attendre")
     }
@@ -128,11 +167,20 @@ const RegisterScreen = () => {
                 value={numbip} 
                 setValue={setNumbip} 
                 secureTextEntry={false}/>
+
+                <CustomButton 
+                text="Choisissez une photo pour que l'on vous reconnaisse" 
+                onPress={pickImage} 
+                type = "PRIMARY"
+                />
+                {image && <Image source={{ uri: image }} style={{ width: 200, height: 200 }} />}
+
             <CustomButton 
             text="Créer un compte et connecter mon bipeur!" 
             onPress={onRegisterPressed}
             type ="PRIMARY"
             />
+            
 
             <CustomButton 
             text="Vous avez un compte? Connectez-vous!"

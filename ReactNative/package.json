@@ -13,6 +13,7 @@
     "@react-navigation/native-stack": "^6.9.8",
     "axios": "^1.2.3",
     "expo": "^47.0.13",
+    "expo-image-picker": "~14.0.2",
     "expo-splash-screen": "~0.17.5",
     "expo-status-bar": "~1.4.2",
     "moti": "^0.24.2",

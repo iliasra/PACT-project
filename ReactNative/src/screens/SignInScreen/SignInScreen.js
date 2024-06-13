@@ -49,7 +49,6 @@ const SignInScreen = () => {
 
     const onSignInPressed = () => {
     
-      
       socket.emit("username:", username);
       socket.emit("password:", password);
       socket.emit("ConnectionRequest"); 

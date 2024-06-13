@@ -55,12 +55,16 @@ const HomeScreen = () => {
         switch (arg){
             case '1': 
             {setZone1NeedsHelp({ ...styles.squareZone1, backgroundColor: 'red' });};
+            break;
             case '2': 
             {setZone2NeedsHelp({ ...styles.squareZone2, backgroundColor: 'red' });};
+            break;
             case '3': 
             {setZone3NeedsHelp({ ...styles.squareZone3, backgroundColor: 'red' });};
+            break;
             case '4': 
             {setZone4NeedsHelp({ ...styles.squareZone4, backgroundColor: 'red' });};
+            break;
 
 
         }
@@ -72,7 +76,6 @@ const HomeScreen = () => {
             const url = URL.createObjectURL(blob);
             setPhotoUrl(url);
             console.log(photoUrl);
-    
       })
       .catch(error => console.log(error));
     });
@@ -88,20 +91,6 @@ const HomeScreen = () => {
         setColor("#FF0000");
     });
 
-    const onPress = () => {
-        setSource(ALERT);
-        setAlertText('ALERTE \n' + nom +' '+ prenom+ ' est en danger dans la zone ' + loc);
-        setColor("#D90404");
-        fetch('http://137.194.210.159:80/photo')
-            .then(response => response.blob())
-            .then(blob => {
-        const url = URL.createObjectURL(blob);
-        setPhotoUrl(url);
-        console.log(photoUrl);
-
-  })
-  .catch(error => console.log(error));
-    }  
     
     return (
         <View style={{flex:1}}>
@@ -134,11 +123,6 @@ const HomeScreen = () => {
                 <Text style={{textAlign: true}}>Zone 4</Text>
             </View>
 
-            <CustomButton 
-            text="Image" 
-            onPress={onPress}
-            type="TERTIARY"
-            />
             <CustomButton
             text="Alerte traitée?"
             onPress={() => {
